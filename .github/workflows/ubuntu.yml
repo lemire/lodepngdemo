@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Setup deps
-        run: sudo apt-get install ninja-build libwayland-dev libxrandr-dev libxkbcommon-x11-dev libxkbcommon-tools libxkbcommon-x11-0 libxinerama-dev
+        run: sudo apt-get install ninja-build libwayland-dev libxrandr-dev libxkbcommon-x11-dev libxinerama-dev libxcursor-dev libxi-dev  libglu1-mesa-dev freeglut3-dev mesa-common-dev
       - name: Prepare
         run: cmake  -DBUILD_SHARED_LIBS=${{matrix.shared}} -G Ninja -B build
         env:
