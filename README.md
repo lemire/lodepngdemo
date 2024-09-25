@@ -1,4 +1,5 @@
 # CPM demo
+[![VS17-CI](https://github.com/lemire/lodepngdemo/actions/workflows/vs.yml/badge.svg)](https://github.com/lemire/lodepngdemo/actions/workflows/vs.yml) [![Ubuntu 22.04](https://github.com/lemire/lodepngdemo/actions/workflows/ubuntu.yml/badge.svg)](https://github.com/lemire/lodepngdemo/actions/workflows/ubuntu.yml)
 
 This is a CMake/CPM demo including lodepng and other libraries.
 
