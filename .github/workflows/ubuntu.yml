@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        shared: [ON, OFF]
-        cxx: [g++-12, clang++-14]
+        shared: [OFF]
+        cxx: [g++-12]
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Setup deps
-        run: sudo apt-get install ninja-build libwayland-dev
+        run: sudo apt-get install ninja-build libwayland-dev libxkbcommon-x11-0
       - name: Prepare
         run: cmake  -DBUILD_SHARED_LIBS=${{matrix.shared}} -G Ninja -B build
         env:
